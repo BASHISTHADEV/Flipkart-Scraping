@@ -13,6 +13,6 @@ So, it boils down to speed vs. robustness of the code and there is no universal 
 
 Enter product u want to search on flipkart as input.
 
-All the products in search results on the webpage of flipkart will be printed along with price and rating. Along with the output in the window, a file named "Flipkartproducts1.csv" will be created in the same folder as the program. It will contain the product name, price and rating,Seller name with rating of the each search result in a tabular manner.
+All the products in search results on the webpage of flipkart will be printed along with price and rating and seller information from every product page . Along with the output in the window, a file named "Flipkartproducts1.csv" will be created in the same folder as the program. It will contain the product name, price and rating,Seller name with rating of the each search result in a tabular manner.
 
 I've attached Flipkartproducts1.csv file as an example for the search query "shoe" with this.
