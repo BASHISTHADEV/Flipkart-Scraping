@@ -1,18 +1,31 @@
 # Flipkart-Scraping
-Web scraping an online shopping site in India (Flipkart) using BeautifulSoup in python.
+This is a Python script that scrapes product information from Flipkart, an online shopping platform in India. It can extract data such as product name, price, rating, reviews, seller information, and more. It can also save the scraped data into a CSV file for further analysis.
 
-Python is used because it has a wide range of libraries to use for webscraping like BeautifulSoup, scrapy, etc,.
+## Requirements
 
-Now, if you know regular expressions, you might be thinking that you can write code using regular expression which can do the same thing for you. I definitely had this question. In my experience with BeautifulSoup and Regular expressions to do same thing I found out:
+To run this script, you need to have Python 3 installed on your system. You also need to install the following libraries:
 
-->Code written in BeautifulSoup is usually more robust than the one written using regular expressions. Codes written with regular expressions need to be altered with any changes in pages. Even BeautifulSoup needs that in some cases, it is just that BeautifulSoup is relatively better.
+- requests
+- BeautifulSoup
+- pandas
 
-->Regular expressions are much faster than BeautifulSoup, usually by a factor of 100 in giving the same outcome.
+You can install them using pip:
 
-So, it boils down to speed vs. robustness of the code and there is no universal winner here. If the information you are looking for can be extracted with simple regex statements, you should go ahead and use them. For almost any complex work, I usually recommend BeautifulSoup more than regex.I've used BeautifulSoup here.
 
-Enter product u want to search on flipkart as input.
+## How to use
 
-All the products in search results on the webpage of flipkart will be printed along with price and rating and seller information from every product page . Along with the output in the window, a file named "Flipkartproducts1.csv" will be created in the same folder as the program. It will contain the product name, price and rating,Seller name with rating of the each search result in a tabular manner.
+- Install the required libraries 
+- Run in  Jupyter Notebook   Flipkart_scraper.ipynb`
+- Enter the product name that you want to scrape, for example "smartwatch"
+-  Wait for the script to scrape the data.
+- The script will scrape the product title, price, rating, seller details and other details from the all page of search results
+- The scraped data will be saved in a CSV file named "flipkart_product1.csv" in the same folder as the script
+- You can open the CSV file using any spreadsheet software or pandas library
+
 
 I've attached Flipkartproducts1.csv file as an example for the search query "shoe" with this.
+
+## Disclaimer
+
+This script is for educational purposes only and not for business purposes. Please use it responsibly and respect the website's terms of service and robots.txt rules. Do not scrape too frequently or too many pages at once to avoid getting blocked by the website. I am not responsible for any misuse or damage caused by this script.
+
